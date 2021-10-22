@@ -1,0 +1,146 @@
+body{
+    padding: 0; /* внутренние отступы у элемента*/
+    margin: 0; /* внешние отступы у элемента*/
+    font-family: 'Anton', sans-serif; /* шрифт*/
+    color: black;
+    font-size: 16px; /* размер*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase; /* задает верхний регистр для текста*/
+}
+h2{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+ul, li {
+    display: block; /* блочный тип элемента. Каждый элемент начинается с новой строки и занимает 100% ширины по умолчанию*/
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto; /* внешние отступы сверху и снизу, справа и слева*/
+}
+
+.header {
+    background: url("header.jpg") no-repeat center top / cover;
+    padding-bottom: 80vh;
+}
+header a {
+    color: #FFFF;
+}
+
+.menu{
+    display: flex;
+}
+.menu li a{
+    text-transform: uppercase; /* задает верхний регистр для текста*/
+    text-decoration: none; /* убирает подчеркивание текста*/
+    font-size: 14px;
+    margin-right: 40px;
+    letter-spacing: 0.1em; /* отступ между символами*/
+}
+
+.tel {
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: auto; /* прибивает элемент к правой стороне*/
+    letter-spacing: 0.1em; /* отступ между символами*/
+}
+
+.nav {
+    display: flex; /* определяет расположение дочерних элементов (в строку)*/
+    align-items: center; /* выравнивание в центре поперечной оси*/
+    padding-top: 50px; /*задает внутренний отступ сверху у элемента*/
+}
+
+.logo{
+    margin-right: 70px; /* отступ с правой стороны*/
+}
+
+.offer{
+    text-transform: uppercase; /* задает верхний регистр для текста*/
+    margin-top: 200px; /* отступ сверху*/
+    color: #FFFF;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.offer p{
+  font-size: 30px;
+    letter-spacing: 0.1em; /* отступ между символами*/
+
+}
+
+.offer h1{
+   font-size: 100px;
+    margin-bottom: 19px; /* отступ снизу*/
+    letter-spacing: 0.02em; /* отступ между символами*/
+    margin-top: -25px;
+}
+
+.btn{
+    display: block; /* блочный тип элемента. Каждый элемент начинается с новой строки и занимает 100% ширины по умолчанию*/
+    font-size: 17px;
+    text-align: center; /* выравнивание текста (по центру)*/
+    letter-spacing: 0.1em; /* отступ между символами*/
+    padding: 17px 47px; /*внутренний отступ (сверху и снизу, справа и слева)*/
+    border: 1px solid #FFFF; /* задает границу со всех сторон (размер/тип/цвет)*/
+    width: 238px; /* высота области*/
+    transition: all 0.5s ease; /*анимация значений со скоростью и обычным переходом*/
+}
+
+.btn:hover{ /*hover - наведение*/
+    background: #FFFF;
+    color: black;
+}
+section{
+    padding-top: 113px;
+}
+
+h2{
+    font-size: 50px;
+    margin-bottom: 58px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between; /*выравнивание элементов (оставшееся пространство распределяется между элементами*/
+}
+
+.desc-left, .desc-right{
+    width: 568px;
+}
+
+.description p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: justify; /*выравнивание текста (по левому и правому краям за исключением последней строки)*/
+}
+
+.gallery{
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    padding: 114px 0;
+}
+
+.footer-text p{
+    margin-right: 60px;
+}
+
